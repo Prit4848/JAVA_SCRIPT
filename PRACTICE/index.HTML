@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+           margin: 10px;
+           padding: auto;
+           border: 2px solid black;
+           width: 20vw;
+           height: 20vh;
+           text-align: center;
+           font-size: larger;
+           background-color :chartreuse
+        }
+    </style>
+</head>
+<body>
+    <h1>hello wold</h1>
+    <div onmouseover="alert('choice any one ##')" class="box">
+        <ul id="mylist">
+            <li>banana</li>
+            <li>apple</li>
+            <li>orange</li>
+        </ul>
+    </div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <!-- inline event handeling -->
+    <button onclick="console.log('click button');alert('hello')">click me!</button>
+    <button ondblclick="console.log('two times clicked');alert('hello world')">click 2 times!</button>
+    <!-- js event handelikng -->
+    <button id="btn1">btn1</button>
+    <button id="btn2">btn2</button>
+    <script src="script.js"></script>
+</body>
+</html>

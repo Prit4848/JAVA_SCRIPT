@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: antiquewhite;
+}
+
+.demo{
+    color: black;
+    background-color: blue;
+    margin: 2px;
+    border: 2px solid yellowgreen;
+    border-radius: 20%;
+}

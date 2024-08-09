@@ -1,0 +1,10 @@
+=> Event in js - change in the state of an object is known as n Event
+ mouse event(click,double click etc.)
+ keyboard event(keypress,keyup,keydoun)
+ form event(submit etc.)
+ print event & many more
+
+ =>event listeners
+
+ node.addEventListener(event,callbak)
+ node.removeEventListener(event,callback)

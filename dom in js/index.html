@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom manuplation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><div>
+    <h1 class="main">My name is prit</h1>
+    <p class="demo" id="demo">hello my brother</p>
+    <p class="demo"> hello dosto kaise ho</p>
+    <form id="form_1" action="" onsubmit="return validform()">
+        <input id="inpur_id" type="text" class="">
+        <input type="submit">
+    </form>
+</div>
+    <script>
+       const my_node_list = document.querySelectorAll("div")
+
+       for(let i = 0;i < my_node_list.length;i++){
+        my_node_list[i].style.color = "blue";
+       }
+       
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

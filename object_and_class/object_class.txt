@@ -1,0 +1,34 @@
+#Prototype in js
+->a javascript object is entity state and behavior
+->js object have special protype called protype
+->we can set prototype using  __proto__
+
+#Classe in js
+->Class is the program code template for creating objects.
+->those object will have some state  & some behaviour (function) inside it.
+
+class My_class{
+    constructor(){.....}
+    My_Method(){.....}
+}
+
+let myObj = new Myclass()
+
+=>cunstructor() Method
+-automaticaly invoked by new
+-initialize object
+
+=>inharitance in js
+->inharitance is passing down properties & methos from parent class to child class
+class Parent {
+
+}
+class Child extends Parent{
+
+}
+
+
+=> Super Keyword
+->super keyword is used to call the cunstructor of parent class to access the parent properties and method
+super(args) // call parent constructor
+super.parentMethod(args)

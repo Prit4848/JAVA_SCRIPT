@@ -1,0 +1,100 @@
+// words and key words
+
+//
+// var,let and consts = variable value we can change any time but constant value we can not change
+
+// hoisting = variable and functions are hoisted which means there declaration is move on the top of code
+
+//types in js
+// primitive and reference
+// primitive = number,string,null,undefined,boolean
+// reference = [] () {}
+// aisi koi bhi value jisko copy karne par rel copy nhi hota ,balki us main value ka reference pass hojaata hai,use ham referance value kahate 
+// or jiska copy karne par real copy ho jaye use value primitive value kahte hai
+
+// conditionals - if else else-if
+
+// loops - for and while
+
+// functions  = function ko ham tin tarikese use kar sakte hai
+// 1) jab apka code app turant nahi chalana chahte future mai chalana chate ho
+// 2) jab apka code app reuse karna chahte ho
+// 3) jab app code chalana chahte ho har baar with different data
+function p(a,b,d){         // a b d are parameters
+    console.log(a,b,d)
+}
+
+p(12,14,15)   // 12 14 15 are arguments
+
+
+// arrays = aek se jyada value store karne ke liye array use hota hai= group of values
+var a = [12,"prit",p(13,14,15)]
+
+// push pop shift unshift
+var arr = [1,2,3,4,4,5]
+console.log(arr.push(12)) // push given value
+console.log(arr.pop())    // pop last value 
+console.log(arr.unshift(1)) // add first position
+console.log(arr)   
+console.log(arr.shift())   // remove first position element
+console.log(arr.splice(2,2))     // remove 2 position 2 elsement
+
+// objects 
+
+# the differance between var let and constant
+var old is mein tha 
+let and const new js mein hai
+// var function scoped hota hai => var apne parent function
+mein kahi bhi use ho sakta hai
+function abcd(){
+    for(var i = 1;i <12;i++){
+        console.log(i)
+    }
+    console.log(i)
+}
+// let braces scoped hai
+
+var adds itself to the window objects 
+let const doesn't adds
+window = ye wo item hai jo javascript mai present nahi hai oose use karne ke liye browser se lena padta hai
+
+# browser contax api
+stack
+heap memory = jitna bhi variable ya data hota hai oose store kahi to store karna padata hai oose heap memory kahte hai
+
+# execution contex = execution contex is a container where teh function's code is execute and it's created whenever a function is called,
+it contains three thinks it variables,funnctions and lexical environment
+# lexical environment = lexical environment ek chart hota hai jsme likha hota hai ki ham kis chiska use kar sakte hai or kiska nahi,
+matlab ki it holds it's scope and scope chain
+
+# how to copy referance values
+using spread orperator[...]
+var a = [1,2,3,4,5]
+var b = [...a]
+
+#truthy vs falsy
+js mein kuch bhi likho wo mainly do prakarmese aek prakar ko belong karti hai
+falsy values ye hai = 0 false undefined null NaN document.all
+truthy values falsy ke sivay jo hoti hai vo
+
+# foreach forin do-while
+foreach loop srf array pe chalta hai matlab ki jab bhi tumhare pass ek array ho,
+tabh use main kaun aata hai forEach loop
+
+val a = [1,2,3,4,5,6]
+
+a.forEach(function(a){
+    console.log(a+2)
+})
+
+forin loop object par loop lagane ke liye use hote hai
+
+var obj ={
+    "name":"prit",
+    "rollNo":"50",
+    "home":"amadhara"
+}
+
+for(var key in obj){
+    console.log(key,obj[key])
+}

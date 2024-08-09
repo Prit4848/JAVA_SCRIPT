@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+.box{
+    margin: 10px;
+    padding: 10px;
+    height: 25vh;
+    width: 25vw;
+    background-color: blueviolet;
+    border:2px solid brown;
+    border-radius: 2%;
+}
+
+.newclass{
+    background-color: blue;
+}
